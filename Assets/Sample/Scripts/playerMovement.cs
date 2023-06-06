@@ -27,7 +27,7 @@ public class playerMovement : MonoBehaviour
         float oldy = moveDirection.y;
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
         moveDirection = Camera.main.transform.TransformDirection(moveDirection);
-        if (Input.GetKey(KeyCode.RightShift))
+        if (Input.GetKey(KeyCode.LeftShift))
         {
             currentSpeed = Mathf.MoveTowards(currentSpeed, runSpeed, lerpSpeed * Time.deltaTime);
         }
