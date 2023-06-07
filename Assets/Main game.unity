@@ -424,10 +424,10 @@ MonoBehaviour:
   CameraTarget: {fileID: 8620735405988652821}
   mouseXSpeedMod: 5
   mouseYSpeedMod: 5
-  MaxViewDistance: 15
-  MinViewDistance: 1
+  MaxViewDistance: 50
+  MinViewDistance: 0
   ZoomRate: 500
-  cameraTargetHeight: 0.5
+  cameraTargetHeight: 0.1
 --- !u!1 &8620735404961128653
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,8 +639,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd13cfddd47aefa4b9ad7591c0457c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  runSpeed: 10
+  speed: 5
+  runSpeed: 15
   jumpSpeed: 8
   gravity: 20
   lerpSpeed: 7
