@@ -12,7 +12,7 @@ public class playerMovement : MonoBehaviour
     private float currentSpeed;
     public float lerpSpeed = 7;
     public  Animator anim;
-    private Vector3 moveDirection = Vector3.zero;
+    public Vector3 moveDirection = Vector3.zero;
 
     void Start()
     {
@@ -26,7 +26,7 @@ public class playerMovement : MonoBehaviour
     {
         float oldy = moveDirection.y;
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
-        moveDirection = Camera.main.transform.TransformDirection(moveDirection);
+        moveDirection = Camera.main.transform.GetChild(0).TransformDirection(moveDirection);
         if (Input.GetKey(KeyCode.LeftShift))
         {
             currentSpeed = Mathf.MoveTowards(currentSpeed, runSpeed, lerpSpeed * Time.deltaTime);

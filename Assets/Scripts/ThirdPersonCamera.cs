@@ -20,6 +20,7 @@ public class ThirdPersonCamera : MonoBehaviour
     private float currentDistance;
 
     public float cameraTargetHeight = 1.0f;
+    public LayerMask ignoreLayer;
 
 
     // Use this for initialization
@@ -53,7 +54,7 @@ public class ThirdPersonCamera : MonoBehaviour
         Vector3 cameraTargetPosition = new Vector3(CameraTarget.position.x, CameraTarget.position.y + cameraTargetHeight, CameraTarget.position.z);
 
         bool isCorrected = false;
-        if (Physics.Linecast(cameraTargetPosition, position, out collisionHit))
+        if (Physics.Linecast(cameraTargetPosition, position, out collisionHit,ignoreLayer))
         {
             position = collisionHit.point;
             correctedDistance = Vector3.Distance(cameraTargetPosition, position);
