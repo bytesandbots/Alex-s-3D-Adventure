@@ -16,7 +16,8 @@ public class wallclimbing : MonoBehaviour
     void Update()
     {
         RaycastHit hit;
-        if (Physics.Raycast(transform.position - new Vector3(0,0,-3), transform.forward, 3, ignoreLayers))
+        //Debug.DrawRay(transform.position - transform.TransformDirection(new Vector3(0, 0, 1)), transform.forward + transform.TransformDirection(new Vector3(0, 0, 5)));
+        if (Physics.Raycast(transform.position - transform.TransformDirection(new Vector3(0,0,1)),  transform.forward, 5, ignoreLayers))
         {
             canClimb = true;
 
