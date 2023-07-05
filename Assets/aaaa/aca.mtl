@@ -1,0 +1,57 @@
+# 3ds Max Wavefront OBJ Exporter v0.94b - (c)2007 guruware
+# File Created: 30.08.2019 22:07:09
+
+newmtl wire_174186203
+	Ns 32
+	d 1
+	Tr 1
+	Tf 1 1 1
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.6824 0.7294 0.7961
+	Ks 0.3500 0.3500 0.3500
+
+newmtl Material__25
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\mohaned\Desktop\ayat sell 3d model\acnologia\Acnologia\body.png
+	map_Kd C:\Users\mohaned\Desktop\ayat sell 3d model\acnologia\Acnologia\body.png
+	map_d C:\Users\mohaned\Desktop\ayat sell 3d model\acnologia\Acnologia\body.png
+
+newmtl Material__26
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\mohaned\Desktop\ayat sell 3d model\acnologia\Acnologia\body2.png
+	map_Kd C:\Users\mohaned\Desktop\ayat sell 3d model\acnologia\Acnologia\body2.png
+	map_d C:\Users\mohaned\Desktop\ayat sell 3d model\acnologia\Acnologia\body2.png
+
+newmtl Material__27
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\mohaned\Desktop\ayat sell 3d model\acnologia\Acnologia\wings.png
+	map_Kd C:\Users\mohaned\Desktop\ayat sell 3d model\acnologia\Acnologia\wings.png
+	map_d C:\Users\mohaned\Desktop\ayat sell 3d model\acnologia\Acnologia\wings.png
