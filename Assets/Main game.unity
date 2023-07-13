@@ -2216,15 +2216,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5772324481245445264, guid: 8bcee27ed356a184dac52b08be39c8ea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 784.5
+      value: 780.298
       objectReference: {fileID: 0}
     - target: {fileID: 5772324481245445264, guid: 8bcee27ed356a184dac52b08be39c8ea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.44
+      value: 4.28
       objectReference: {fileID: 0}
     - target: {fileID: 5772324481245445264, guid: 8bcee27ed356a184dac52b08be39c8ea, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 412.26
+      value: 419.681
       objectReference: {fileID: 0}
     - target: {fileID: 5772324481245445264, guid: 8bcee27ed356a184dac52b08be39c8ea, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2729,6 +2729,7 @@ MonoBehaviour:
   anm: {fileID: 466990558}
   rightHand: {fileID: 899572674}
   sword: {fileID: 543450653339346976}
+  hip: {fileID: 294492304}
 --- !u!23 &8786149516660239828
 MeshRenderer:
   m_ObjectHideFlags: 0
