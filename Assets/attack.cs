@@ -18,6 +18,10 @@ public class attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            anm.SetTrigger("using magic");
+        }
         if (Input.GetKeyDown(KeyCode.E)){
             sword.SetParent(rightHand);
             sword.localPosition = new Vector3(1.018f, 0.536f, 1.173f);

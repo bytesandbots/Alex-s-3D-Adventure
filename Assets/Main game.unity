@@ -194,7 +194,7 @@ MonoBehaviour:
   ignoreLayers:
     serializedVersion: 2
     m_Bits: 183
-  climbSpeed: 1
+  climbSpeed: 5
 --- !u!1001 &224464671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -942,6 +942,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f1a0cabd6d316954bb70319d8bc124af, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9ac283675be7b264684ca90880e2ad9f, type: 2}
     - target: {fileID: 919132149155446097, guid: f1a0cabd6d316954bb70319d8bc124af, type: 3}
       propertyPath: m_Name
       value: carcass
@@ -2822,7 +2826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  runSpeed: 30
+  runSpeed: 15
   jumpSpeed: 8
   gravity: 15
   lerpSpeed: 7
