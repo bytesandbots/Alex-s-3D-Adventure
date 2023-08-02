@@ -9,6 +9,7 @@ public class attack : MonoBehaviour
     public Transform sword;
     public Transform hip;
     private bool animates;
+    public GameObject attack1;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,8 @@ public class attack : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             anm.SetTrigger("using magic");
+            GameObject clone = Instantiate(attack1,transform.position + transform.TransformDirection(Vector3.forward *5),Quaternion.identity);
+            Destroy(clone,10);
         }
         if (Input.GetKeyDown(KeyCode.E)){
             sword.SetParent(rightHand);
