@@ -195,6 +195,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 183
   climbSpeed: 5
+<<<<<<< Updated upstream
 --- !u!1001 &224464671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -345,6 +346,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 366175167995203695, guid: fe0f1203e14da5548ba26c2d067ff631, type: 3}
   m_PrefabInstance: {fileID: 1972854675}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> Stashed changes
 --- !u!1001 &332548626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -831,7 +834,7 @@ Transform:
   m_GameObject: {fileID: 765827605}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -59.7, y: 40.3, z: 339}
-  m_LocalScale: {x: 178.40984, y: -31.74516, z: 2000.5127}
+  m_LocalScale: {x: 178.40984, y: -54.95722, z: 2000.5127}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -884,7 +887,7 @@ Transform:
   m_GameObject: {fileID: 816209629}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1072, y: 46, z: 55}
-  m_LocalScale: {x: 234.33354, y: -38.39416, z: 2627.5862}
+  m_LocalScale: {x: 234.33354, y: -81.418655, z: 2627.5862}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1178,7 +1181,7 @@ Transform:
   m_GameObject: {fileID: 1035224584}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 687, y: 60, z: 1157}
-  m_LocalScale: {x: 2598.8171, y: -42.630573, z: 394.26932}
+  m_LocalScale: {x: 2598.8171, y: -90.14235, z: 394.26932}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2023,7 +2026,7 @@ Transform:
   m_GameObject: {fileID: 2056236604}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 579, y: 62, z: 5.4000244}
-  m_LocalScale: {x: 1174.2958, y: -55.796898, z: 141.12077}
+  m_LocalScale: {x: 1174.2958, y: -134.20827, z: 141.12077}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2825,9 +2828,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd13cfddd47aefa4b9ad7591c0457c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   speed: 3
   runSpeed: 15
   jumpSpeed: 8
+=======
+  speed: 10
+  runSpeed: 50
+  jumpSpeed: 10
+>>>>>>> Stashed changes
   gravity: 15
   lerpSpeed: 7
   anim: {fileID: 466990558}
