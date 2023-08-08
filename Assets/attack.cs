@@ -10,6 +10,7 @@ public class attack : MonoBehaviour
     public Transform hip;
     private bool animates;
     public GameObject attack1;
+    private bool magicAttack;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +20,12 @@ public class attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) && !magicAttack)
         {
+            magicAttack = true;
             anm.SetTrigger("using magic");
-            GameObject clone = Instantiate(attack1,transform.position + transform.TransformDirection(Vector3.forward *5),Quaternion.identity);
-            Destroy(clone,10);
+            StartCoroutine(magicDelay());
+           
         }
         if (Input.GetKeyDown(KeyCode.E)){
             sword.SetParent(rightHand);
@@ -35,8 +37,17 @@ public class attack : MonoBehaviour
             StartCoroutine(animationDelay());
         }
     }
+    IEnumerator magicDelay()
+    {
 
-    IEnumerator animationDelay()
+
+        yield return new WaitForSeconds(1.2f);
+        GameObject clone = Instantiate(attack1, transform.position + transform.TransformDirection(Vector3.forward * 5), Quaternion.identity);
+        Destroy(clone, 4);
+        yield return new WaitForSeconds(4);
+        magicAttack = false;
+    }
+        IEnumerator animationDelay()
     { 
 
         anm.SetTrigger("Sheathing Sword");
