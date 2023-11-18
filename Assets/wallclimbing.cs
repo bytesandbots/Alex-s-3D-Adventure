@@ -17,7 +17,7 @@ public class wallclimbing : MonoBehaviour
     {
         RaycastHit hit;
         //Debug.DrawRay(transform.position - transform.TransformDirection(new Vector3(0, 0, 1)), transform.forward + transform.TransformDirection(new Vector3(0, 0, 5)));
-        if (Physics.Raycast(transform.position - transform.TransformDirection(new Vector3(0,0,1)),  transform.forward, 5, ignoreLayers))
+        if (Physics.Raycast(transform.position - transform.TransformDirection(new Vector3(0,0,1)),  transform.forward, 3, ignoreLayers))
         {
             canClimb = true;
 
@@ -28,12 +28,12 @@ public class wallclimbing : MonoBehaviour
         }
         if (canClimb)
         {
-            if (Input.GetKey(KeyCode.W))
+            if (Input.GetKey(KeyCode.Z))
             {
                 anm.SetBool("climb",true); 
                 GetComponentInParent<playerMovement>().moveDirection.y = climbSpeed;
             }
-            if (Input.GetKeyUp(KeyCode.W))
+            if (Input.GetKeyUp(KeyCode.Z))
             {
                 anm.SetBool("climb", false);
             }
