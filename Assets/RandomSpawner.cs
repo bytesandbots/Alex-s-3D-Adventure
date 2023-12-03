@@ -5,7 +5,8 @@ using UnityEngine;
 public class RandomSpawner : MonoBehaviour
 {
     public GameObject Skelly;
-    public void RandomSpawn() {
+    public void RandomSpawn() 
+    {
         StartCoroutine(waitspawn());
     }
     Vector3 GetRandomLocation() { 
